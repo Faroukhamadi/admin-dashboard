@@ -114,6 +114,7 @@ img {
 }
 
 .main-content {
+  overflow: hidden;
   background-color: #e2e8f0;
   grid-row: 2 / 7;
   grid-column: 3 / 20;
@@ -138,4 +139,68 @@ img {
 
 .text-container p {
   font-family: 'Roboto';
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: 50px repeat(auto-fill, minmax(min(100px, 100%), 1fr)) 50px;
+  grid-template-columns: repeat(auto-fill, minmax(min(120px, 100%), 1fr)) 50px;
+  font-family: 'Roboto';
+}
+
+/* .para-ann,
+.para-proj {
+} */
+
+.para-proj {
+  margin-left: 7px;
+}
+
+.para-ann {
+  grid-column: 9 / 12;
+}
+
+.project-container {
+  grid-row: 2 / 7;
+  grid-column: 1 / 9;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(330px, 100%), 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(min(1fr, 100%), 1fr));
+  gap: 15px;
+  margin-left: 7px;
+}
+
+.text-div p {
+  color: rgb(143, 142, 142);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+  font-size: medium;
+}
+
+.test-div {
+  background-color: white;
+  margin: 5px;
+  border-left: 7px solid #f0b429;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.announcement-container {
+  grid-row: 4 / 7;
+  grid-column: 9 / 12;
+  background-color: pink;
+}
+
+.text-div,
+.card-svgs {
+  margin-left: 6px;
+}
+
+.card-svgs {
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
 }
